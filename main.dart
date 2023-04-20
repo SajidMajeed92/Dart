@@ -6,5 +6,5 @@ main() {
   // semi-colon (;) is used to end the statement
   //  Double slash is used to comment the code in Dart
   //main() function gets executed in order of appearance.
-  print("Hello Worl from Drat");
+  print("Hello World from Drat");
 }
