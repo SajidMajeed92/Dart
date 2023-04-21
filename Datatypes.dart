@@ -43,4 +43,83 @@ it’s not referencing anything.
   double integerLiteral = 1;
   
   print(integerLiteral);
+
+    // Single Quotes
+  print('Using single quotes');
+
+  // Double Quotes
+  print("Using double quotes");
+
+  // Single quotes with escape character \
+  print('It\'s possible with an escape character');
+
+  // Double quotes
+  print("It's better without an escape character");
+
+  String s1 = "A String";
+
+  print(s1);
+
+  // String Concatination
+  String s2 = "First half of the string. ";
+  String s3 = "Second half of the string";
+  print(s2 + s3);
+
+  /* String interpolation
+     String interpolation is the ability to create new strings or modify existing
+     ones by embedding them with expressions. 
+     Expressions are evaluated, and the resulting values are converted into strings
+     and concatenated with the enclosing string. 
+     Interpolation is Dart’s more concise and efficient alternative to string concatenation. 
+     However, string interpolation is a lot more complex than simple concatenation which allows a lot more flexibility.
+     
+     Syntax:
+      An un-escaped ＄ character in a string signifies the beginning of an interpolated expression.
+      
+      print ("optionalstring $variableIndentifies optional string")
+    
+
+      The ＄ sign can be followed by a single identifier id that does not contain the ＄ character.
+      print ("optionalstring ${expression} optional string")
+
+*/
+
+  String country = "Japan";
+
+  print("I want to visit $country");
+  
+   print("The sum of 5 and 3 equals ${5+3}.");
+
+  bool b1 = true;
+  print(b1);
+
+  bool greater;
+  greater=5>3;
+  print(greater);
+ 
+  // Type Inference
+ // dataType variableName = Initial Value
+
+ var bookTitle = "Lord of the Rings: The Fellowship of the Ring";
+  var bookAuthor = "J. R. R. Tolkien";
+  var bookNoOfPages = 423;
+
+  // Driving Code
+  print(bookTitle);
+  print(bookAuthor);
+  print(bookNoOfPages);
+
+  print(bookTitle.runtimeType);
+  print(bookNoOfPages.runtimeType);
+
+  // variable to hold objects of many types, you can declare a variable using the dynamic keyword.
+   dynamic dynamicVariable = 'A string'; // type String
+  print(dynamicVariable);
+
+  dynamicVariable = 5; // type int
+  print(dynamicVariable);
+
+  dynamicVariable = true; // type bool
+  print(dynamicVariable);
+
 }
