@@ -29,16 +29,16 @@ main() {
 
   print(listOfVegetable is List<String>);
 
-  var listOfVegetables1 = ['potato', 'carrot', 'cucumber',null];
+  var listOfVegetables1 = ['potato', 'carrot', 'cucumber', null];
 
   print(listOfVegetables1[1]);
   print(listOfVegetables.length);
-  
+
   //listName.add(element)
   listOfVegetables1.add('cabbage');
   print(listOfVegetables1);
- 
- listOfVegetables1.addAll(['broccoli', 'zucchini']); 
+
+  listOfVegetables1.addAll(['broccoli', 'zucchini']);
 
   print(listOfVegetables1);
   listOfVegetables1.removeAt(0);
@@ -58,123 +58,18 @@ main() {
   // map() method
   //listName.map((iterator)=> statement)
   var listOfVegetables3 = ['carrot', 'cucumber', 'zucchini'];
-  var mappedVegetables3 = listOfVegetables3.map((vegetable) => 'I love $vegetable');
+  var mappedVegetables3 =
+      listOfVegetables3.map((vegetable) => 'I love $vegetable');
   print(mappedVegetables3);
 
   var listOfVegetables4 = ['carrot', 'cucumber', 'zucchini'];
-  var mappedVegetables4 = listOfVegetables4.map((vegetable) => 'I love $vegetable').toList();
+  var mappedVegetables4 =
+      listOfVegetables4.map((vegetable) => 'I love $vegetable').toList();
   print(mappedVegetables4);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+// List Cube Challenge
+// You have to create and populate a list of cubes given a list of integers.
+  var integers = [1, 2, 3];
+  var cubes = integers.map((integer) => integer * integer * integer).toList();
+  print(cubes);
 }
